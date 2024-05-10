@@ -1,0 +1,236 @@
+:root {
+    --bg1: rgb(23, 148, 60);
+    --bg2: #000000;
+    --body: rgb(95, 86, 86);
+    --black: #181618;   
+    --white: rgb(255, 255, 255);
+    --p: rgb(245, 206, 116);
+
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--bg2);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+a {
+ text-decoration: none;
+}
+
+
+#banner {
+    min-height: 100vh;
+    background: linear-gradient( to right, hsla(0, 2%, 33%, 0.856), rgba(44, 42, 42, 0.315)),
+    url(https://www.vegetables.co.nz/assets/CardImages/Veg-AZ-banner.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.829) ,rgba(7, 7, 7, 0.925));
+}
+
+.navbar .nav-link {
+    color:#FFFFFF;
+}
+
+.navbar #navbarNav .nav-link.active {
+    color: var(--black) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--bg1) !important;
+}
+
+.navbar-brand img {
+    width: 50%;
+}
+
+.btn{
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 100px;
+}
+
+.btn-brand {
+    background-color: var(--black);
+    color: #fdf7f7;
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--black);
+    color: var(--black);
+}
+
+#about {
+    background-color: rgb(115, 160, 115);
+    position: relative;
+    z-index: 1;
+
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+#services {
+    background-color: #dad4d4;
+}
+
+.icon-box-img {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: rgb(115, 160, 115);
+}
+
+.card:hover {
+    background-color: rgb(124, 119, 119);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #FFFFFF;
+
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient( to right, hsla(0, 2%, 33%, 0.856), rgba(44, 42, 42, 0.315)),
+    url(https://www.vegetables.co.nz/assets/CardImages/Veg-AZ-banner.jpg);
+    min-height: 70vh;
+}
+
+#reviews {
+    background-color: #FFFFFF;
+}
+
+.testimonials {
+    padding: 30px;
+    background: linear-gradient(to bottom, hsla(123, 36%, 34%, 0.829) ,rgba(37, 36, 36, 0.925));
+    border-radius: 1px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+#reviews a {
+    text-decoration: none;
+    color: var(--p);
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+    
+.accordion-item {
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    border-radius: 0 !important;
+}   
+
+.accordion-button {
+    background-color: #a2cc7c;
+    border: none;
+    border-bottom: 1px solid #080808;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+    border-left: 3px solid var(--black);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #eff3f7;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+#faq {
+    background-color: rgb(115, 160, 115);
+}
+ 
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+}
+
+/* Hover effect for FAQ questions */
+.accordion-button:hover {
+    background-color: var(--white); /* Change background color on hover */
+    color: var(--bg2); /* Change text color on hover */
+}
+
+/* Adjust accordion icon */
+.accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    content: ""; /* Plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: ""; /* Minus icon */
+}
+
+/* Footer */
+#footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgb(115, 160, 115);;
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+}
+#footer ul.list-unstyled li:hover a {
+    color: var(--black);
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg2);
+}
+
+.btn-outline-light {
+    border-color: #ffffff !important;
+    color:#ffffff
+}
+
